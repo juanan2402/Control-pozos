@@ -25,7 +25,7 @@ Aplicación web para la gestión de pozos petroleros, desarrollada con **Angular
 
 ## Estructura del proyecto
 
-.
+```
 ├── backend/ # Servidor Express en TypeScript
 │ ├── src/
 │ │ ├── index.ts # Punto de entrada del servidor
@@ -45,7 +45,7 @@ Aplicación web para la gestión de pozos petroleros, desarrollada con **Angular
 │ └── package.json
 │
 └── docker-compose.yml # Configuración opcional para levantar todos los servicios
-
+```
 
 ---
 
@@ -60,16 +60,16 @@ bash
 npm install
 npx prisma migrate dev --name init
 npm run dev
-
+```
 Servidor disponible en: http://localhost:4000
 
 Frontend
-
+```
 cd Backend
 npm install
 ng serve
 Aplicación disponible en: http://localhost:4200
-
+```
 
 Endpoints Backend
 GET /pozos → Lista todos los pozos registrados.
@@ -79,18 +79,19 @@ POST /pozos → Crea un nuevo pozo.
 PATCH /pozos/:id → Actualiza el estado de un pozo.
 
 Ejemplo POST /pozos
+```
 {
   "nombre": "Pozo 1",
   "ubicacion": "Bloque 7",
   "produccionDiaria": 500,
   "estado": "activo"
 }
-
+```
 Base de datos
 Se inicializa con 5 registros por defecto
-
+```
 **id  |  nombre  |  ubicacion  |  produccion_diaria  |  estado
-
+```
 **Este código no es funcional
 se presentaron algunos inconvenientes durante el proceso, principalmente:
 
