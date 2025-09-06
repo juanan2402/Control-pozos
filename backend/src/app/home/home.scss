@@ -1,0 +1,19 @@
+/* app.component.scss */
+
+/* Contenedor principal */
+section.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Título que ocupa toda la parte superior */
+h1 {
+  width: 100%;
+  background-color: #0014dc; /* Azul brillante */
+  color: white;               /* Letras blancas */
+  font-weight: bold;           /* Negrita */
+  text-align: center;          /* Centrado horizontal */
+  padding: 0;           /* Espacio arriba y abajo */
+  margin: 0;                   /* Sin margen externo */
+  box-sizing: border-box;      /* Incluye padding dentro del width */
+}
