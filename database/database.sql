@@ -1,4 +1,4 @@
-CREATE DATABASE listaPozos;
+CREATE DATABASE listapozos;
 CREATE TABLE pozos (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(40) NOT NULL, 
