@@ -87,12 +87,12 @@ Ejemplo POST /pozos
   "estado": "activo"
 }
 ```
-Base de datos
+##Base de datos
 Se inicializa con 5 registros por defecto
 ```
-**id  |  nombre  |  ubicacion  |  produccion_diaria  |  estado
+id  |  nombre  |  ubicacion  |  produccion_diaria  |  estado
 ```
-**Este código no es funcional
+###Este código no es funcional
 se presentaron algunos inconvenientes durante el proceso, principalmente:
 
 El frontend, al ser desarrollado con Angular, se lo trabajó con poca experiencia y unicamente accediendo a documentación. No fue posible unificar con el backend
