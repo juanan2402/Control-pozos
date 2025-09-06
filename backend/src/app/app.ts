@@ -5,7 +5,7 @@ import { Home } from "./home/home";
   selector: 'app-root',
   imports: [Home],
   template: `
-    <app-home />
+    <app-home><app-home />
 
   `,
   styles: [],

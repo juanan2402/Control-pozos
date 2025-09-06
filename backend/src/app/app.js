@@ -7,7 +7,7 @@ const home_1 = require("./home/home");
     selector: 'app-root',
     imports: [home_1.Home],
     template: `
-    <app-home />
+    <app-home><app-home />
 
   `,
     styles: [],

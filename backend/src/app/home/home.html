@@ -1,13 +1,50 @@
 <!-- app.component.html -->
 
+<!-- Contenedor principal -->
 <section class="container">
 
-  <h1>{{ title() }}</h1>
-  <ul>
-    <li *ngFor="let item of items; let i = index">
-      {{ i + 1 }}. {{ item }}
-    </li>
-  </ul>
+  <!-- Formulario fijo arriba -->
+  <div class="top-form">
+    <h1>Control de Pozos</h1>
+    <form class="pozo-form">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre del pozo">
+      </div>
 
-  <p class="note">Plantilla lista; sin servicios ni lógica adicional.</p>
+      <div class="form-group">
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" placeholder="Ubicación del pozo">
+      </div>
+
+      <div class="form-group">
+        <label for="produccion">Producción diaria:</label>
+        <input type="text" id="produccion" placeholder="Producción diaria">
+      </div>
+
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <select id="estado">
+          <option value="">Seleccione estado</option>
+          <option value="activo">Activo</option>
+          <option value="inactivo">Inactivo</option>
+        </select>
+      </div>
+
+      <button type="button">Agregar pozo</button>
+    </form>
+
+    <!-- Indicador de porcentaje (visual) -->
+    <div class="progress-container">
+      <label>Porcentaje de pozos activos:</label>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 50%;"></div> <!-- ejemplo 50% -->
+      </div>
+    </div>
+  </div>
+  <div>
+    @for (pozo of pozoItems(); track $index) {
+        <p>{{pozo.nombre}}</p>
+    }
+  </div>
 </section>
