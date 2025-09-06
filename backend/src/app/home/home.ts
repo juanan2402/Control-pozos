@@ -2,6 +2,7 @@ import { Component, inject, OnInit, signal } from '@angular/core';
 import { Pozos } from "../services/pozos";
 import { Pozo} from "../model/pozos.type";
 import { catchError } from 'rxjs';
+//Componente general, compuesto del titulo, y las entradas para la lista
 @Component({
   selector: 'app-home',
   imports: [],

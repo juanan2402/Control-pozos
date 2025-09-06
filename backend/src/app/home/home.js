@@ -5,6 +5,7 @@ const core_1 = require("@angular/core");
 const pozos_1 = require("../services/pozos");
 const pozos_type_1 = require("../model/pozos.type");
 const rxjs_1 = require("rxjs");
+//Componente general, compuesto del titulo, y las entradas para la lista
 @(0, core_1.Component)({
     selector: 'app-home',
     imports: [],

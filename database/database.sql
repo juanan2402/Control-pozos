@@ -13,3 +13,5 @@ INSERT INTO pozos(nombre, ubicacion,produccion_diaria,estado)
         ('Pozo3', 'P1', 5000, 'activo'),
         ('Pozo4', 'P3', 2000, 'inactivo'),
         ('Pozo5', 'P2', 7000, 'activo');
+
+--Comandos generales aplicados para generar la base de datos

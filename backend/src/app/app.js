@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.App = void 0;
 const core_1 = require("@angular/core");
 const home_1 = require("./home/home");
+//Componente principal
 @(0, core_1.Component)({
     selector: 'app-root',
     imports: [home_1.Home],

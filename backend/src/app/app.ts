@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { Home } from "./home/home";
-
+//Componente principal
 @Component({
   selector: 'app-root',
   imports: [Home],

@@ -13,6 +13,6 @@ class Pozos {
         const url = 'http://localhost:4000/pozos';
         return this.http.get(url);
     }
-}
+} //Se debería utilizar el service pozo, a través de HttpClient para extraer el array con estructura Pozo.
 exports.Pozos = Pozos;
 //# sourceMappingURL=pozos.js.map

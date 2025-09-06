@@ -13,4 +13,4 @@ export class Pozos {
     return this.http.get<Array<Pozo>>(url);
   }
 
-}
+}//Se debería utilizar el service pozo, a través de HttpClient para extraer el array con estructura Pozo.
